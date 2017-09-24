@@ -3,18 +3,39 @@
 <head>
   <meta charset="utf-8">
   <link href="../css/stylesheet.css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
   <script type="text/javascript" src="../js/script.js"></script>
   <title>
       Фізичні властивості води
   </title>
 </head>
-<body>
+<body class="animate-in">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="../index.html">Головна</a>
+    <a href="Phis.html">Фізичні властивості</a>
+    <a href="Chem.html">Хімічні властивості</a>
+  </div>
+</div>
+    
+     <div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-img-content">
+    <img src="../images/p1.png" align=center width=50% height=50% padding-right=50px >
+  </div>
+</div>
+    
   <header>
     <h1>Сайт про воду</h1>
-    <ul>
-      <li><a href="../index.html">Загальна інформація</a></li>
-      <li><a href="Phis.html">Фізичні властивості</a></li>
-      <li><a href="Chem.html">Хімічні властивості</a></li>
+    <ul >
+      <li id="navbar"> 
+  <div class="container" onclick="openNav()" id="c1">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+    </li>
     </ul>
   </header>
   <div class="background">
@@ -35,10 +56,10 @@
             Найбільшу густину вода має при +4°С.
             Масу 1 см³ чистої води при цій температурі прийняли за одиницю і назвали грамом (сучасне визначення грама основане на точнішому еталоні).
             На відміну від інших рідин, вода при охолодженні від + 4 до 0°С розширюється.
-            Тому лід легший від води (на 8 %) і не тоне у ній.
+            Тому лід легший від води (на 8%) і не тоне у ній.
             Завдяки цьому, а також малій теплопровідності шар льоду захищає глибокі водойми від промерзання до дна, і цим забезпечується у них життя.
         </p>
-        <img src="../images/p1.png" width=50% height=50% title="Агрегатні стани води" align=left onMouseMove='onMoveImg(this.style);'  onMouseOut='onOutImg(this.style);'>
+        <img src="../images/p1.png" width=50% height=50% title="Агрегатні стани води" align=left onclick="openNav1()" class="myImg">
         <p>
             Потрійна точка води, тобто умови, за яких одночасно у рівноважному стані можуть співіснувати вода, лід та пара, реалізується при температурі 0,01 °C і тиску 611,73 Па.
             Значення 0,01 °C точне — на ньому основане визначення одиниці вимірювання температури в Міжнародній системі (СІ), кельвіна.
@@ -69,6 +90,9 @@
             Це означає, що структура рідкої води має більше схожості з льодом, ніж вважалося раніше. Великий асортимент і просторове поширення когерентного режимів свідчить про існування широкої мережі водневих зв'язків, на відміну від більш ранніх уявлень про структуру води, які розглядали подібну динаміку тільки для невеликих молекулярних кластерів.
         </p>
       </div>
+            <footer>
+    &copy; 2017 GreatDragonTitan
+    </footer>
     </div>
 </body>
 </html>

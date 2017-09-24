@@ -3,18 +3,39 @@
 <head>
   <meta charset="utf-8">
   <link href="../css/stylesheet.css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
   <script type="text/javascript" src="../js/script.js"></script>
   <title>
       Хімічні властивості води
   </title>
 </head>
-<body>
+<body class="animate-in">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="../index.html">Головна</a>
+    <a href="Phis.html">Фізичні властивості</a>
+    <a href="Chem.html">Хімічні властивості</a>
+  </div>
+</div>
+    
+       <div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-img-content">
+    <img src="../images/p2.png" align=center width=50% height=50%  padding-right=50px >
+  </div>
+</div>
+    
   <header>
     <h1>Сайт про воду</h1>
     <ul>
-      <li><a href="../index.html">Загальна інформація</a></li>
-      <li><a href="Phis.html">Фізичні властивості</a></li>
-      <li><a href="Chem.html">Хімічні властивості</a></li>
+      <li> 
+  <div class="container" onclick="openNav()" id="c1">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+    </li>
     </ul>
   </header>
   <div class="background">
@@ -39,7 +60,7 @@
             Іонний добуток води ({H+}×{OH-}, де {H+} і {OH-} — активності відповідних іонів) є сталою величиною і становить 1×10−14 M2, оскільки у чистій воді концентрації (і активності) іонів OH- і H+ рівні, то кожна з них рівна 1×10−7 M2.
             Негативний десятковий логарифм із {H+} називається pH (водневий показник), відповідно для чистої води, яка є абсолютно нейтральною, він становить 7.
         </p>
-        <img src="../images/p2.png" width=50% height=50% title="Молекула води" align=right onMouseMove='onMoveImg(this.style);'  onMouseOut='onOutImg(this.style);'>
+        <img src="../images/p2.png" width=50% height=50% title="Молекула води" align=right onclick="openNav1()" class="myImg">
         <p>
             У хімічному відношенні вода досить активна.
             З багатьма речовинами вона вступає в хімічні реакції вже при звичайній температурі.
@@ -97,6 +118,9 @@
             Хімічна сумісність вод — здатність вод не утворювати твердих осадів при їх змішуванні.
         </p>
       </div>
+            <footer>
+    &copy; 2017 GreatDragonTitan
+    </footer>
     </div>
 </body>
 </html>
